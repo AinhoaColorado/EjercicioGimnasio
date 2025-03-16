@@ -1,19 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Gatitos</title>
     <style>
+      nav,
+      nav a {
+        padding: 8px 16px;
+      }
       section {
-        padding: 10px 0;
+        padding: 20px 0;
+      }
+      video {
+        max-height: 700px;
+        object-fit: contain;
+      }
+      img,
+      video {
+        max-width: 100%;
+        height: auto;
+        border-radius: 24px;
+      }
+      audio {
+        width: 30%;
+        margin: 10px auto;
       }
     </style>
   </head>
   <body>
+    <header>
+      <nav>
+        <a href="./index.html">index.html - Tabla</a>
+        <a href="#">Sección multimedia de gatitos y cascadas</a>
+      </nav>
+    </header>
+
+    <ul>
+      <li><a href="#images">Ir a sección imágenes</a></li>
+      <li><a href="#videos">Ir a sección vídeos</a></li>
+      <li><a href="#sounds">Ir a sección audios</a></li>
+    </ul>
+
     <h1>Sección multimedia de gatitos y cascadas</h1>
 
-    <section>
+    <section id="images">
       <h2>Imágenes</h2>
       <h3 style="color: rgb(14, 173, 163)">Foto proveniente de archivo:</h3>
       <img
@@ -27,7 +58,7 @@
       />
     </section>
 
-    <section>
+    <section id="videos">
       <h2>Vídeo</h2>
       <h3 style="color: rgb(14, 173, 163)">Vídeo proveniente de archivo:</h3>
       <video
@@ -44,7 +75,7 @@
       ></video>
     </section>
 
-    <section>
+    <section id="sounds">
       <h2>Sonido</h2>
       <h3 style="color: rgb(14, 173, 163)">Sonido proveniente de archivo:</h3>
       <audio
